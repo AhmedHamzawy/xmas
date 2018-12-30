@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merry Christmas</title>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: url('https://i.ibb.co/1sQXJ4z/page-bg.png') no-repeat center center/cover;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.animated {
+  font-family: 'Charm', cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 6rem;
+  background: url('https://i.ibb.co/89Cf3dm/text-bg.png') no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBg 90s linear infinite;
+  -webkit-animation: moveBg 90s linear infinite;
+}
+
+/* Text Background Animation */
+@keyframes moveBg {
+  0% {
+    background-position: 0% 30%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+</style>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=1595538550509121&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="container">
+    <h1 class="animated">Merry Christmas</h1>
+    <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+<script src="jquery.snow.js"></script>
+<script>
+var snowEffectInterval = jQuery.fn.snow({
+  // min size of element (default: 20)
+  minSize: 15,
+  
+  // max size of element (default: 50)
+  maxSize: 15,
+  
+  // flake fall time multiplier (default: 20)
+  fallTimeMultiplier: 15, 
+  
+  // flake fall time difference (default: 10000)
+  fallTimeDifference: 9000, 
+  
+  // interval (miliseconds) between new element spawns (default: 500)
+  spawnInterval: 70, 
+  
+  // jQuery element to apply snow effect on (should work on any block element) (default: body)
+  target: jQuery("body"),
+  
+  //elements to use in generating snow effect
+  elements	: [
+  
+    // Element #1
+    { 
+      // html element to be spawned for this element
+      html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
+      // hex color for this element - works only for font based icons
+      color: '#ffffff'
+    },
+    
+    // Element #2
+    { 
+      // html element to be spawned for this element
+      html: '<i class="fa fa-bell-o" aria-hidden="true"></i>',
+      // hex color for this element - works only for font based icons
+      color: '#ed9b40'
+    },
+    
+    // Element #3
+    { 
+      // html element to be spawned for this element
+      html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
+      // hex color for this element - works only for font based icons
+      color: '#ffffff'
+    },
+    
+    // Element #4
+    {
+      // html element to be spawned for this element
+      html: '<i class="fa fa-music" aria-hidden="true"></i>',
+      // hex color for this element - works only for font based icons
+      color: '#cc2037'
+    },
+    
+    // Element #5
+    { 
+      // html element to be spawned for this element
+      html: '<i class="fa fa-snowflake-o" aria-hidden="true"></i>',
+      // hex color for this element - works only for font based icons
+      color: '#ffffff'
+    },
+  ]
+});
+</script>
+
+
+    
+</body>
+</html>
