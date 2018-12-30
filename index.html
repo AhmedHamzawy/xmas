@@ -186,11 +186,12 @@ hr {
   js = d.createElement(s); js.id = id;
   js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=1595538550509121&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-    FB.api('/me', {fields: 'last_name'}, function(response) {
-  console.log(response);
-});
-<div class="container">
+}(document, 'script', 'facebook-jssdk'));
+    
+FB.login(function(response) {
+  if (response.status === 'connected') {
+      
+      <div class="container">
     <h1 class="animated">Merry Christmas</h1>
     <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="true"></div>
     <div class="blog-card spring-fever">
@@ -198,14 +199,21 @@ hr {
       <h3>SPRING FEVER</h3>
       <hr />
       <div class="intro">Yllamco laboris nisi ut aliquip ex ea commodo.</div>
-    </div><!-- /.title-content -->
+    </div>
     
-    <!-- overlays -->
     <div class="gradient-overlay"></div>
     <div class="color-overlay"></div>
-    </div><!-- /.blog-card -->
+    </div>
         
 </div>
+      
+  } else {
+  }
+});    
+</script>
+    
+    
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
 <script src="jquery.snow.js"></script>
